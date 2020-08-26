@@ -1,0 +1,208 @@
+*{
+  padding:0;
+  margin: 0;
+  text-decoration: none;
+  position: relative;
+}
+
+.container{
+  width:1300px;
+  height: 100%;
+}
+
+a {
+  color: #333;
+}
+
+/* header 부분 */
+header{
+  width:100%;
+  height: 130px;
+  float: left;
+}
+header>.container{
+  height:80px;
+}
+header>div>.main>a{
+  float:left;
+  top: 50%;
+}
+header>div>.main>.account{
+  float:right;
+}
+
+header>div>.main>.account>a{
+  padding: 5px 25px;
+  border: solid 1px blue;
+  border-radius:50px;
+  line-height: 80px;
+  transition: 0.4s;
+  margin-left: 20px;
+}
+header > div > .main > .account > a:hover {
+    background: #2aa9e0;
+    color: #fff;
+}
+header > nav{
+  width: 100px;
+  float: left;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  height: 50px;
+}
+header > nav > div > a {
+    margin-right: 25px;
+    font-weight: bold;
+    line-height: 50px;
+}
+/* visual 부분 */
+#visual{
+  width: 100%;
+  overflow: hidden;
+}
+#visual > .slide {
+  width: 300%;
+  height: 700px;
+  float: left;
+  transition: 0.8s;
+  animation: slide 10s infinite;
+}
+#visual > .slide > img {
+  width: calc(100%/3);
+  float: left;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% {margin-left:0}
+  20% {margin-left:0}
+  25% {margin-left:-100%}
+  45% {margin-left:-100%}
+  50% {margin-left:-200%}
+  70% {margin-left:-200%}
+  75% {margin-left:-100%}
+  95% {margin-left:-100%}
+  100% {margin-left:0}
+}
+
+/*section1 부분*/
+#section1 {
+  width: 100%;
+  float: left;
+  margin-top: 100px;
+}
+
+#section1 > div > .title {
+  font-size: 30px;
+  color: #2aa9e0;
+  font-weight: bold;
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#section1 > div > .title > img {
+  height: 30px;
+}
+
+#section1 > div > .list {
+  width: 100%;
+  float: left;
+}
+
+#section1 > div > .list > .item {
+  width: calc( (100% - 60px) / 4);
+  margin-left: 20px;
+  float: left;
+  overflow: hidden;
+}
+
+#section1 > div > .list > .item:first-child {
+  margin-left: 0px;
+}
+
+#section1 > div > .list > .item > .img_box {
+  width: 100%;
+  height: 200px;
+}
+
+#section1 > div > .list > .item > .img_box > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  transition: 0.6s;
+}
+
+#section1 > div > .list > .item > .img_box:hover > img:last-child {
+  right: 0;
+}
+
+#section1 > div > .list > .item > .img_box > img:last-child {
+  right: -310px;
+}
+
+/*section2 부분*/
+#section2 {
+  width: 100%;
+  float: left;
+  margin-top: 100px;
+}
+
+#section2 > div > .title {
+  font-size: 30px;
+  color: #2aa9e0;
+  font-weight: bold;
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#section2 > div > .title > img {
+  height: 30px;
+}
+
+#section2 > div > .list {
+  width: 100%;
+  float: left;
+}
+
+#section2 > div > .list > .item {
+  width: calc( (100% - 60px) / 4);
+  margin-left: 20px;
+  float: left;
+  overflow: hidden;
+}
+
+#section2 > div > .list > .item:first-child {
+  margin-left: 0px;
+}
+
+#section2 > div > .list > .item > .content {
+  border-radius: 50%;
+  height: 280px;
+}
+
+#section2 > div > .list> .item:hover > .content {
+  transform: rotateY(180deg);
+}
+
+#section2 > div > .list > .item > .content {
+  border-radius: 50%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+#section2 > div > .list > .item > .content > div {
+  position: absolute;
+  height: 100%;
+}
+
+#section2 > div > .list > .item > .content > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
